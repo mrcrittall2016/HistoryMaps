@@ -1,0 +1,465 @@
+
+/* Base styles */
+
+html, 
+body {
+    /* Margin, padding, height and width settings ensure html/body extends to far reaches of window */
+    margin:0;
+    padding:0;    
+    min-height:100%; 
+    width:100%; 
+    font-family:"Montserrat", arial, sans-serif;  
+    /*border:1px solid red; */
+    /*position:relative; /* Set to relative to ensure footer sections stay stuck to the bottom of the page when browse to other views */
+}
+
+
+body {
+    /*border:5px solid green; */ 
+    min-height:100vh; /*If not enough content on page, ensures body at least reaches base of view...but still leaves whitespace. If do not fill the rest of the page then need to create sticky footer*/  
+}
+
+[class *= "col-md-"]{
+    /*border:1px solid red; */
+    /*height:100px;*/
+}
+
+.container, 
+.container-fluid {         
+    margin:0 auto;   
+    padding:0;    
+}
+
+.container {
+    max-width:960px; 
+}
+
+/* Ensure row stays within bounds of container */
+.row {
+    margin:0;         
+}
+
+.col-md-6 {
+    padding:0; 
+}
+
+h1 {
+    text-transform:uppercase;  
+    font-weight:bold; 
+}
+
+p {
+    font-size:12px; 
+    text-transform:uppercase; 
+    letter-spacing:2px;
+}
+
+a {
+    text-decoration:none; 
+    color:#000;   
+    transition:font-weight 0.5s;  
+    border:none;    
+}
+
+a:hover {
+   @extend a; 
+   font-weight:bold;
+}
+
+a:focus{
+    @extend a; 
+    outline:none;    
+}
+
+/* Border at top of page */
+.border {
+    height:10px; 
+    background-color:#000; 
+}
+
+/* Background class */
+
+/* See here how to position a background image and adjust its opacity: https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity */
+.background {          
+    position: relative;    
+    overflow: hidden;   
+    height:800px;    
+}
+
+.background:before {
+    background: url("../images_portfolio/spiral2.jpg") no-repeat fixed center center;
+    background-size:cover;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* Menu/list class */
+.menu {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+/* Extend class for different list stylings */ 
+.menu-primary {
+
+    li {
+        display:inline-block; 
+        margin-right:40px; 
+        text-transform:uppercase; 
+    }
+
+}
+
+
+/* Header section */
+.header {
+    text-align:center; 
+    padding:0; 
+    margin:0;
+    color:#000;    
+
+   .container-fluid {
+     margin:150px 0 200px;
+   }
+
+   h1 {
+     font-size:26px;  
+     letter-spacing:10px;       
+   }
+
+   p {
+       margin-bottom:50px; 
+   } 
+
+}
+
+
+/* Supporting */
+
+.supporting-1 h1, 
+.supporting-2 h1, 
+.portfolio h1 {
+    font-size:20px;     
+    margin-bottom:20px; 
+}
+
+.supporting-1 p, 
+.supporting-2 p, 
+.portfolio p {    
+    margin-bottom:20px;        
+}
+
+.supporting-1 {
+    background-color:#27282b; 
+    color:#fff; 
+    text-align:center;
+    padding:80px 0; 
+
+    .prose{
+        font-size:14px; 
+        font-family:"arial", sans-serif; 
+        letter-spacing:0;
+        text-transform:none; 
+    }
+}
+
+.supporting-2 {
+    text-align:center;
+    padding:100px 0 0; 
+
+    .container {
+        padding:0 50px; 
+    }
+
+    .row {
+        margin:70px 0 80px; 
+    }
+
+    .field {
+        border-radius:0; 
+        height:35px; 
+        text-transform:uppercase; 
+        font-size:10px;
+        letter-spacing:2px; 
+        border:none; 
+        box-shadow:none; 
+        background-color:#FAFAFA; 
+        margin:0 10px; 
+    }
+
+    .col-md-1 {
+        a {
+            span {
+               position:relative;
+               top:150px;  
+            }
+        }
+
+    }
+
+    .col-md-7,
+    .col-md-4,
+    .col-md-1 {
+        height:250px; 
+        padding:0;
+    }
+
+    .image {
+        height:250px;
+        width:280px; 
+    }
+
+}
+
+#comment {
+    border:none;
+    box-shadow:none; 
+    text-transform:uppercase; 
+    font-size:10px;
+    letter-spacing:2px; 
+    resize:none; /*Removes dots at bottom corner of textarea */
+    background-color:#FAFAFA; 
+    margin:0 10px; 
+}
+
+#wrap {
+    background-color:#FAFAFA;   
+    height:232px; 
+    width:50px;   
+    margin:0 20px;  
+}
+
+
+.supporting-3 ul, 
+.supporting-4 ul{
+    padding:0;
+    margin:0;
+    list-style:none;   
+}
+
+/*By setting the width property, ensures images do not flow on to next line */
+.supporting-3 ul li {
+    float:left;
+    width:12.5%;    
+    /*border:1px solid green; */
+}
+
+.supporting-4 {    
+    background-color:#27282b;
+    text-align:center;
+    padding:40px 0; 
+
+    p {
+        position:relative;
+        right:20px; 
+        top:10px; 
+    }
+}
+
+.supporting-4 ul li {
+    display:inline-block; 
+    font-size:30px;
+    margin-right:40px; 
+    color:#fff;
+}
+
+.supporting-4 p,
+.supporting-5 p {
+    color:#fff;    
+    margin-top:10px; 
+}
+
+.supporting-5 {       
+    background-color:#000;
+    text-align:center;
+    color:#fff;
+    padding:20px 0;
+    margin-bottom:0;
+}
+
+/* Portfolio */
+
+/* Seems like the best way to size images is to first create a placeholder for them of set size within grid ie 
+outer-box. Then scale image in separate editor (GIMP) to this size. Place within placeholder setting width to 100% and height auto */ 
+
+.portfolio {
+    /*border:5px solid yellow; */
+    text-align:center;      
+}
+
+.entry {
+    /*border:1px solid orange; */
+    padding:0; /*50px 45px*/
+    margin:0 0 65px; 
+}
+
+.entry-content {
+    border-bottom:2px solid #fafafa;
+    padding:0 0 40px;
+}
+
+.entry-content > p {
+    margin-bottom:50px; 
+}
+
+.outer-box {
+    width:370px;
+    height:250px;
+    display:block; 
+    position:relative;
+    margin:0 auto 20px;
+    overflow:hidden;
+    /*border:1px solid black;*/    
+}
+
+.outer-box img {
+    width:100%;
+    height:auto;
+    margin:0 auto; 
+    
+}
+
+.inner-box {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    padding:0;
+    opacity:0;
+    transition:opacity 0.5s; 
+}
+
+.inner-box:hover {
+    opacity:0.9;
+    background-color:#f9f9fa; 
+    cursor:pointer; 
+}
+
+.inner-box h4 {
+    line-height:225px; 
+}
+
+.col-md-6 {
+
+    a > h4 {
+        letter-spacing:1.5px;
+        text-transform:uppercase;
+        font-size:16px;
+        font-weight:bold;
+        margin-bottom:30px; 
+    }
+}
+
+/* Modal styles */
+
+/* Set Modal position when open click on image. See here: http://stackoverflow.com/questions/20313798/bootstrap-3-modal-position */
+
+/* Custom modal class.. using SCSS nesting below */
+
+.modal-customise {
+
+    .modal-content {
+        border:2px solid #000; 
+    } 
+
+    .modal-dialog {
+        position:relative;
+        top:25%; /* 200px also looked quite nice */
+    }
+
+    .modal-header, 
+    .modal-footer {
+        border:none; 
+        text-align:center;
+        padding:30px; 
+    }
+
+    .modal-header {
+
+        h4 {
+            letter-spacing:2px;
+            text-transform:uppercase; 
+            font-weight:bold;   
+            margin:0;  
+        }
+    }
+
+    /* Style and position modal close button */
+    .modal-header {
+
+        .close {
+            position:absolute; 
+            top:-17px;
+            right:-23px;    
+            border-radius:100%;     
+            height:30px;
+            width:30px;
+            font-size:20px; 
+            opacity:1;
+            color:#fff;
+            background-color:#000;
+            border:1px solid #fff;
+        }
+
+    }
+
+    .modal-body {   
+        padding:0 30px;
+
+        p {
+            line-height:2;    
+            font-family: 'arial', sans-serif;
+            text-transform:none; 
+            font-size:12px;    
+            margin:0; 
+            letter-spacing:0; 
+            text-align: justify;
+
+            span {
+                font-weight:bold; 
+                text-decoration:none; 
+                padding-bottom:0; 
+            }
+        }
+
+    } 
+
+    .modal-footer {
+        p {
+            margin:0;
+            font-weight:bold; 
+        }    
+    }
+    
+}
+
+/*
+.footer {
+    position:absolute;
+    bottom:0;
+    left:0; 
+    right:0; 
+}
+
+/* Images */
+
+img.image-small {
+    height:130px; 
+    width:160px;    
+    
+    /*max-width:100%;
+    height:auto;*/ 
+}
+
+
+
+

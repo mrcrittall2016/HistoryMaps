@@ -1,0 +1,111 @@
+
+/* DIALOGUE */
+
+.dialogue {     
+    
+    text-align:center; 
+    position:relative;    
+    font-style:italic; 
+    font-family: 'Niconne', cursive;
+    padding:10px 10px 25px;  
+     
+
+    h1 {
+        
+        font-family:"Montserrat", arial, sans-serif;  
+        text-transform:uppercase;
+        font-style:normal; 
+        font-size:32px; 
+        font-weight:bold; 
+        margin:10px auto; 
+        padding-top:5px; 
+        line-height:1.5; 
+        /*width:40%;
+        border-bottom:3px solid black; */
+        
+        @include extra-small-only { 
+            font-size:24px; 
+        }
+
+    }
+
+    h2 {
+        font-weight:bold; 
+
+        @include extra-small-only { 
+            font-size:20px; 
+        }
+    }
+
+    p {
+        font-size:20px; 
+        line-height:1.5; 
+        margin-bottom:50px; 
+
+        @include extra-small-only { 
+            font-size:18px; 
+            margin:20px 0 0; 
+        }
+    }
+
+    p:last-of-type{
+        @include extra-small-only {
+            margin-bottom:0; 
+        }  
+    }
+  }
+
+  /* Dialogue for thin strip at top of landing page */
+  .dialogue-primary {
+    height:0; 
+    padding:1px; 
+  }
+
+  /* Create smaller padding for registration and login pages */
+  .dialogue-secondary {
+    @include extra-small-only { 
+       padding:0 10px;
+
+       h2 {
+           margin:20px 0; 
+       }
+     }
+  }
+
+  /* Change h1 to h2 and style for Winner Page */
+  .dialogue-tertiary {
+
+    h2 {
+       font-family:"Montserrat", arial, sans-serif;  
+       text-transform:uppercase;
+       font-style:normal;  
+       letter-spacing:5px; 
+       font-size:30px; 
+       font-weight:bold;  
+    }
+
+    @include extra-small-only {
+        /*word-wrap:break-word;*/
+        h2 {
+            font-size:18px;
+            letter-spacing:2px;  
+            font-weight:bold;           
+        }
+    }
+  }
+
+  /* Mobile view landing page about panel */ 
+  #about #wrap {
+      @include extra-small-only { 
+        height:100px;
+        overflow:scroll;    
+        padding:0 10px;     
+
+        h2 {
+            margin:0; 
+        }        
+    }
+  }
+
+
+  

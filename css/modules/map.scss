@@ -1,0 +1,42 @@
+
+/*CSS FOR map_new.html and question_new.html windows */
+
+.map_window {
+  /*text-align:center; */ 
+
+  #map-canvas {
+    height: 600px;
+    @include extra-small-only {
+      height:400px; 
+    }
+    background-color: #fff;
+    width: 85%;
+    margin: 0 auto; 
+  }
+}
+
+.painting_window {
+
+  .container {
+    height: 400px;
+    background:transparent; 
+    width: 60%;
+     
+    @include extra-small-only {
+      width:90%; 
+    }
+    /*border: 1px solid #000;*/
+    border: 1px solid #000;
+  }
+
+  img {
+     height:100%;
+     width:100%;
+     border-radius:100%; 
+     background-color: #fff;
+  }
+
+}
+
+
+ 

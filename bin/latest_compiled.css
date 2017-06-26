@@ -1,0 +1,1247 @@
+/* Files to include */
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Perhaps in the future just condense this mixin to margin_padding */
+/* Flex box */
+/* 768px / 16px = 1em */
+/* Extra Small Only */
+/* Small Devices, Tablets */
+/* Medium and above devices */
+/***************************
+****************************
+Base Styles
+****************************
+***************************/
+/* Base styles */
+html,
+body {
+  /* Margin, padding, height and width settings ensure html/body extends to far reaches of window */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", arial, sans-serif; }
+
+body {
+  min-height:100vh; /*If not enough content on page, ensures body at least reaches base of view...but still leaves whitespace. If do not fill the rest of the page then need to create sticky footer*/ }
+
+button {
+  padding: 10px 25px;
+  font-size: 20px;
+  background-color: transparent;
+  margin: 20px 0; }
+
+h1 {
+  letter-spacing: 10px;
+  font-size: 45px; }
+
+h2 {
+  letter-spacing: 2px;
+  font-size: 25px; }
+
+p {
+  font-size: 12px; }
+
+a {
+  color: #000;
+  letter-spacing: 2px; }
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold; }
+
+/***************************
+****************************
+Layout Styles
+****************************
+***************************/
+[class*="col-"] {
+  /*border:1px solid red;*/
+  /*height:100px;
+  /*padding:0; */
+  margin: 0;
+  /*border:1px solid red; */ }
+
+.container,
+.container-fluid {
+  margin: 0 auto;
+  padding: 0; }
+
+.container {
+  max-width: 960px;
+  /*border:1px solid black*/ }
+
+/* Ensure row stays within bounds of container */
+.row {
+  margin: 0; }
+
+.col-md-4 {
+  padding: 0;
+  /*height:100px; */
+  /*border:4px solid red;*/ }
+
+/*
+.col-xs-6 {
+    float:left;
+    width:50%; 
+}
+*/
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+/* Background class */
+/* See here how to position a background image and adjust its opacity: https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity */
+/* Note on z-index. Default is auto, which means just inherits from parent. Often this is 
+html which has a z-index of 0 */
+/* To layer an element: Set element position to relative. Then set element:before position to absolute and z-index -1. Set it's background colour to what you desire and adjust opacity. This enables the background to be lightened without affecting the font on top. To ensure font is not affected, set container to z-index 1. If have another layer ie element:after, set container z-index to 2. See main class in sections as well as well_custom and btn_block */
+.background, .background-secondary, .background-tertiary {
+  position: relative;
+  /*overflow: hidden;*/
+  /*height:800px;*/
+  /* Height auto sizes image to container that it is within in this case body,
+  which has been set in base.scss as min-height:100vh */
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  @media only screen and (max-width: 47.9375em) {
+    .background, .background-secondary, .background-tertiary {
+      height: auto;
+      width: 100%; } }
+
+.background:before, .background-secondary:before, .background-tertiary:before {
+  background: url("../Map_images/oldpaper_flikr.jpg") no-repeat center center;
+  background-size: cover;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* By specifying z-index as -1, says that pseudo element is beneath background element (0) and can hence control background tone without affecting child elements */
+  z-index: -1;
+  opacity: 0.9; }
+
+.background-primary {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  /*border-radius:100%; */
+  opacity: 1;
+  z-index: 1; }
+
+/* Two layers above and below background to control light and shading without affecting title */
+.background-primary:before {
+  /*background-color:#fcf2de;*/
+  background: url("../Map_images/paper2.jpg") no-repeat center center;
+  background-size: cover;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*border-radius:100%;*/
+  z-index: -1;
+  opacity: 0.3; }
+
+.background-primary:after {
+  /*@extend .background:before;*/
+  background: url("../Map_images/map2.jpg") no-repeat center center;
+  background-size: cover;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*border-radius:100%;*/
+  opacity: 0.3;
+  z-index: -1; }
+
+.background-secondary:before {
+  background: url("../Map_images/quizback.jpg") no-repeat center center;
+  background-size: cover; }
+
+.background-tertiary:before {
+  background: url("../Map_images/earth_map.jpg") no-repeat center center;
+  background-size: cover; }
+
+/* Menu/list class */
+.menu, .mobile_menu {
+  padding: 0;
+  margin: 0 0 25px;
+  list-style: none;
+  /*float:left; */
+  /*border:1px solid red; */ }
+  @media only screen and (max-width: 47.9375em) {
+    .menu, .mobile_menu {
+      display: none; } }
+  .menu li, .mobile_menu li {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 0 20px 0;
+    /*text-transform:uppercase;  */
+    font-style: italic;
+    font-family: 'Niconne', cursive;
+    font-size: 20px; }
+
+@media only screen and (max-width: 47.9375em) {
+  .mobile {
+    display: none; } }
+
+@media only screen and (max-width: 47.9375em) {
+  .mobile_menu li {
+    display: block;
+    padding: 20px 0; } }
+
+i.fa-bars {
+  display: none; }
+  @media only screen and (max-width: 47.9375em) {
+    i.fa-bars {
+      display: block;
+      font-size: 30px; } }
+
+i.fa-long-arrow-up {
+  display: none; }
+  @media only screen and (max-width: 47.9375em) {
+    i.fa-long-arrow-up {
+      display: none;
+      font-size: 30px; } }
+
+.white_block {
+  display: none; }
+  @media only screen and (max-width: 47.9375em) {
+    .white_block {
+      display: none;
+      height: 200px;
+      /*background-color:#fff;*/
+      background: transparent; } }
+
+.menu-primary li i {
+  font-size: 30px;
+  color: #fff; }
+.menu-primary li:hover {
+  cursor: pointer; }
+
+/* For photo collage */
+.menu-secondary {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* Removes spaces between elements for inline-block*/
+  font-size: 0; }
+  .menu-secondary li {
+    /*float:left;
+    width:12.5%;    */
+    display: inline-block;
+    width: calc(100%/8);
+    /*@include flex(0 1 12.5%);*/
+    /*@include flex(1);*/ }
+    @media only screen and (max-width: 47.9375em) {
+      .menu-secondary li {
+        width: calc(100%/4); } }
+    .menu-secondary li img {
+      /* Note that if set max-width:100% instead of width then images do not scale when screen width is increased */
+      width: 100%;
+      height: auto; }
+    .menu-secondary li img:hover,
+    .menu-secondary li img:focus {
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.5s; }
+
+/***************************
+Header
+***************************/
+/* Header section */
+.header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #000; }
+  .header .container-fluid {
+    /*margin: 150px 0 200px;*/ }
+    @media only screen and (max-width: 47.9375em) {
+      .header .container-fluid {
+        margin: 50px 25px; } }
+  .header h1 {
+    font-size: 26px;
+    letter-spacing: 10px; }
+    @media only screen and (max-width: 47.9375em) {
+      .header h1 {
+        line-height: 1.5;
+        width: 100%;
+        margin: 0 auto 30px; } }
+  .header p {
+    margin-bottom: 50px; }
+    @media only screen and (max-width: 47.9375em) {
+      .header p {
+        margin-bottom: 20px; } }
+
+/*******************/
+/*SECTIONS*/
+/*******************/
+.header {
+  /*border:1px solid blue; */
+  text-align: center;
+  width: 100%;
+  padding: 50px 225px 60px; }
+  @media only screen and (max-width: 47.9375em) {
+    .header {
+      margin: 0 0 20px;
+      padding: 0; } }
+  .header .container-fluid {
+    /*border:2px solid yellow; */
+    margin: 0 auto; }
+    @media only screen and (max-width: 47.9375em) {
+      .header .container-fluid {
+        width: 80%; } }
+    .header .container-fluid .fa-bars {
+      font-size: 20px;
+      position: relative;
+      top: 5px; }
+    .header .container-fluid .header_bar {
+      padding: 1px;
+      outline: #fff; }
+
+.main {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 70%;
+  height: 500px;
+  border: 1px solid black; }
+  @media only screen and (max-width: 47.9375em) {
+    .main {
+      /*padding:10px 10px 40px;*/
+      height: 500px;
+      width: 90%; } }
+  .main .container-fluid {
+    position: relative;
+    top: 40%;
+    /*border:1px solid black;*/
+    /* Ensure container sits on top of three background-primary layers */
+    z-index: 2; }
+    .main .container-fluid h1 {
+      border-bottom: 3px solid black;
+      margin: 0 auto;
+      width: 55%;
+      padding-bottom: 15px;
+      margin-bottom: 25px; }
+      @media only screen and (max-width: 47.9375em) {
+        .main .container-fluid h1 {
+          border-width: 2px;
+          width: 75%;
+          font-size: 30px; } }
+    .main .container-fluid h2 {
+      font-style: italic;
+      font-family: 'Niconne', cursive; }
+      @media only screen and (max-width: 47.9375em) {
+        .main .container-fluid h2 {
+          margin: 0 auto;
+          width: 60%;
+          font-size: 20px; } }
+
+.selection {
+  text-align: center;
+  padding: 0;
+  /*border: 1px solid*/; }
+  .selection .dialogue {
+    width: 90%;
+    margin: 0 auto; }
+  .selection .picture_select {
+    height: 420px;
+    /*width: 400px*/;
+    width:80%;
+    position: relative;
+    margin: 40px auto 0;
+    overflow: hidden;
+    padding: 0; }
+    .selection .picture_select img {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border: 2px solid #000; }
+
+.orders .container {
+  height: 650px;
+  margin: 30px auto 100px;
+  padding: 0;
+  text-align: left; }
+  .orders .container img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative; }
+  .orders .container .letter {
+    padding: 20px 50px;
+    position: absolute;
+    top: 20px;
+    left: 0; }
+    .orders .container .letter p {
+      text-align: center; }
+      .orders .container .letter p span {
+        float: right; }
+
+.supporting-1 {
+  
+  padding: 75px 0;
+  text-align: center;
+  }
+  
+  @media only screen and (max-width: 47.9375em) {
+    .supporting-1 {
+      padding: 0;
+      margin: 20px 0; } }
+  
+  .supporting-1 form, .supporting-1 .form-group {
+    color: #000; }
+  
+  .supporting-1 .form-group input {
+    width: 40%;
+    margin: 25px auto;
+    font-size: 20px;
+    color: #000;
+    border-radius: 0;
+    border: none; }
+    .supporting-1 input input:focus {
+      border: none; }
+    .supporting-1 input input:hover {
+      border: none; }
+  
+  .supporting-1 input[type='radio'] {
+    font-size:8px;
+    margin:0;
+    width:100%;
+  }
+  
+  .supporting-1 .radio label {
+    border:1px solid red;
+  }
+  
+    @media only screen and (max-width: 47.9375em) {
+      .supporting-1 input {
+        width: 80%; } }
+
+.footer {
+  text-align: center;
+  padding: 15px 0 10px;
+  background-color: #4B4E50;
+  margin: 0; }
+  .footer p {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.shadow-primary {
+  -webkit-box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.75); }
+
+/* Portfolio */
+/* Seems like the best way to size images is to first create a placeholder for them of set size within grid ie 
+outer-box. Then scale image in separate editor (GIMP) to this size. Place within placeholder setting width to 100% and height auto */
+.portfolio {
+  text-align: center; }
+
+.entry {
+  margin: 0 0 65px; }
+  @media only screen and (max-width: 47.9375em) {
+    .entry {
+      padding: 0 30px;
+      margin: 0; } }
+
+.entry-content {
+  border-bottom: 2px solid #fafafa;
+  padding: 0 0 40px; }
+  @media only screen and (max-width: 47.9375em) {
+    .entry-content {
+      padding: 0; } }
+  .entry-content > p {
+    margin-bottom: 50px; }
+
+.outer-box {
+  width: 370px;
+  height: 250px;
+  display: block;
+  position: relative;
+  margin: 0 auto 20px;
+  overflow: hidden; }
+  @media only screen and (max-width: 47.9375em) {
+    .outer-box {
+      width: 100%;
+      height: auto; } }
+  .outer-box img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; }
+
+.inner-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.5s; }
+  .inner-box h4 {
+    line-height: 225px; }
+
+.inner-box:hover {
+  opacity: 0.9;
+  background-color: #f9f9fa;
+  cursor: pointer; }
+
+.col-md-6 a > h4 {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 47.9375em) {
+    .col-md-6 a > h4 {
+      margin-bottom: 15px; } }
+
+/* Modal styles */
+/* Set Modal position when open click on image. See here: http://stackoverflow.com/questions/20313798/bootstrap-3-modal-position */
+/* Custom modal class.. using SCSS nesting below */
+.modal-customise {
+  /* Note, need to specify px as opposed to % for modal position in safari */
+  /* Style and position modal close button */ }
+  .modal-customise .modal-content {
+    border: 2px solid #000; }
+  .modal-customise .modal-dialog {
+    position: relative;
+    /*top:25%; /* 200px also looked quite nice */
+    top: 200px; }
+    @media only screen and (max-width: 47.9375em) {
+      .modal-customise .modal-dialog {
+        top: 100px; } }
+  .modal-customise .modal-header,
+  .modal-customise .modal-footer {
+    border: none;
+    text-align: center;
+    padding: 30px; }
+    @media only screen and (max-width: 47.9375em) {
+      .modal-customise .modal-header,
+      .modal-customise .modal-footer {
+        padding: 15px; } }
+  .modal-customise .modal-header h4 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0; }
+  .modal-customise .modal-header .close {
+    position: absolute;
+    top: -17px;
+    right: -23px;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    opacity: 1;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff; }
+    @media only screen and (max-width: 47.9375em) {
+      .modal-customise .modal-header .close {
+        top: -10px;
+        right: -10px; } }
+  .modal-customise .modal-body {
+    padding: 0 30px; }
+    @media only screen and (max-width: 47.9375em) {
+      .modal-customise .modal-body {
+        padding: 0 10px; } }
+    .modal-customise .modal-body p {
+      line-height: 2;
+      font-family: 'arial', sans-serif;
+      text-transform: none;
+      font-size: 12px;
+      margin: 0;
+      letter-spacing: 0;
+      text-align: justify; }
+      @media only screen and (max-width: 47.9375em) {
+        .modal-customise .modal-body p {
+          line-height: 1.5; } }
+      .modal-customise .modal-body p span {
+        font-weight: bold;
+        text-decoration: none;
+        padding-bottom: 0; }
+  .modal-customise .modal-footer p {
+    margin: 0;
+    font-weight: bold; }
+
+/* CV section of Portfolio */
+.cv {
+  text-align: center; }
+  @media only screen and (max-width: 47.9375em) {
+    .cv {
+      text-align: center;
+      margin: 0;
+      padding: 0 5px; } }
+  .cv h1 {
+    letter-spacing: 3px; }
+  .cv h2 {
+    /*margin-bottom:20px;*/ }
+    @media only screen and (max-width: 47.9375em) {
+      .cv h2 {
+        font-size: 12px; } }
+  .cv p,
+  .cv li {
+    font-family: "arial", sans-serif;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    /*margin-bottom:60px;*/ }
+    @media only screen and (max-width: 47.9375em) {
+      .cv p,
+      .cv li {
+        /*margin-bottom:45px;*/ } }
+  .cv span {
+    font-weight: 700; }
+  .cv ul {
+    list-style: none;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0; }
+    @media only screen and (max-width: 47.9375em) {
+      .cv ul {
+        width: 100%; } }
+    .cv ul li {
+      margin: 0 0 10px; }
+    .cv ul li:last-of-type {
+      margin-bottom: 50px; }
+  .cv hr {
+    width: 20%;
+    border: 1px solid; }
+    @media only screen and (max-width: 47.9375em) {
+      .cv hr {
+        width: 40%; } }
+  .cv .separate {
+    margin: 60px 0; }
+    @media only screen and (max-width: 47.9375em) {
+      .cv .separate {
+        margin: 45px 0; } }
+
+/* Return to top of page block */
+.return {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: #000;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1;
+  text-align: center;
+  padding: 12px 0;
+  opacity: 1; }
+  .return i {
+    color: #fff;
+    font-size: 25px; }
+
+.return:hover {
+  opacity: 0.7;
+  cursor: pointer; }
+
+/* DIALOGUE */
+.dialogue {
+  /*height:100px;*/
+  text-align: center;
+  position: relative;
+  /*z-index:3;*/
+  /*display:none;*/
+  font-style: italic;
+  font-family: 'Niconne', cursive;
+  padding: 10px 10px 25px; }
+  .dialogue h1 {
+    font-family: "Montserrat", arial, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px auto;
+    padding-top: 5px;
+    /*width:40%;
+    border-bottom:3px solid black; */ }
+    @media only screen and (max-width: 47.9375em) {
+      .dialogue h1 {
+        font-size: 24px; } }
+  .dialogue h2 {
+    font-weight: bold; }
+  .dialogue p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 50px; }
+  .dialogue p:last-of-type {
+    margin-bottom: 0; }
+
+/* BUTTONS */
+.btn_block {
+  /*width:100%;
+  height:100%;*/
+  position: relative;
+  border: 1px solid;
+  border-radius: 4px;
+  -webkit-box-shadow: inset -1px -1px 14px 1px black;
+  -moz-box-shadow: inset -1px -1px 14px 1px black;
+  box-shadow: inset -1px -1px 14px 1px black; }
+
+/* Color background and adjust opacity allowing brown of body to mix with white of button background without affecting font */
+.btn_block:before {
+  background: url("../Map_images/paper_rgbstock.jpg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background:#fcf2de;*/
+  border-radius: 4px;
+  opacity: 1;
+  z-index: -1; }
+
+.btn_block:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fcf2de;
+  border-radius: 4px;
+  opacity: 0.6;
+  z-index: -1; }
+
+/* WELLS */
+/* Go here to model box shadows: http://www.cssmatic.com/box-shadow and here for tutorial:
+https://css-tricks.com/almanac/properties/b/box-shadow/ */
+.well_custom {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; *
+  -webkit-box-shadow: inset -1px -1px 14px 1px rgba(0,0,0,1);
+  -moz-box-shadow: inset -1px -1px 14px 1px rgba(0,0,0,1);
+  box-shadow: inset -1px -1px 14px 1px rgba(0,0,0,1); */
+  /*-webkit-box-shadow: inset -1px -1px 14px 1px #e3e3e3;*/
+  /* box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5); */
+  /*box-shadow: inset 2px 2px 1px #272B2C;*/
+  box-shadow: inset 3px 3px 1px rgba(0, 0, 0, 0.5);
+  z-index: 0; }
+
+.well_custom:before {
+  position: absolute;
+  background: url("../Map_images/paper_rgbstock.jpg") no-repeat center center;
+  background-size: cover;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background:#fff;*/
+  z-index: -1;
+  /*opacity:0.3;*/ }
+
+/* White layering used to lighten background imaage behind text */
+.well_custom:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #fcf2de;
+  opacity: 0.2; }
+
+/* Add frame to any well or block using background-image Note keep splice to between 10-20% */
+.well-primary {
+  border: 20px solid;
+  opacity: 1;
+  /*outline:1px solid #000;*/
+  /* Apparently need to save GIMP file as png to preserve transaparency.
+  See here on how to change certain parts of image to transparent: https://graphicdesign.stackexchange.com/questions/5446/making-the-background-of-an-image-transparent-in-gimp
+  
+  ie in below case have change centre of picture frame and outside */
+  border-image: url(../Map_images/test_frame.png) 15% round;
+  /* Use background-clip to make padding transparent apart from desired image border: See here: https://css-tricks.com/transparent-borders-with-background-clip/ */
+  background-clip: padding-box; }
+
+.map_window {
+  /*text-align:center; */ }
+  .map_window #map-canvas {
+    height: 600px;
+    /*background-color: #fff;*/
+    width: 85%;
+    margin: 0 auto; }
+
+.painting_window .container {
+  height: 400px;
+  background-color: #fff;
+  width: 60%;
+  border:1px solid #000;}
+  
+.painting_window img {
+  height:100%;
+  width:100%;
+}
+  
+/* CSS for INFO WINDOW on map screen and place names*/ 
+/*styling for info window. Seem to need to specify height in order to remove scollbar on x-axis */
+.gm-style-iw 
+{
+   width: 800px !important;
+   top: 17px !important;
+   left: 0px !important;
+   height:300px;
+}
+
+.label
+{
+    /*small, black text*/ 
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    
+    /*don't let places' labels wrap onto multiple lines*/ 
+    white-space: nowrap;
+}
+
+/* infowindow itself. Dimensions specified and treated as a background */ 
+#infowindow
+{
+    position:relative;
+    border:2px solid red;
+    height:300px; /*400*/
+    width:600px;
+    background: url("../img/pages/infoframe.jpg") no-repeat center center;
+    background-size:cover;
+    margin:0 auto;
+    padding:0;
+}
+
+/* font short-hand: font: font-style font-variant font-weight font-size/line-height font-family; */
+
+#infowindow h2 {
+  font: italic bold 25px Garamond, Baskerville, serif;
+  margin:20px 0 30px;
+  letter-spacing:normal; 
+}
+
+#infowindow p {
+ font: italic bold 18px Garamond, Baskerville, serif;
+}
+
+#infowindow a {
+ position:relative;
+ font: italic bold 14px Garamond, Baskerville, serif;
+ letter-spacing:normal; 
+ margin-top:30px;
+}
+
+#infowindow .container{
+  text-align:center;
+  position:relative;
+  top:10%;
+  width:100%;
+  padding:0 60px;
+  border:1px solid blue;
+}
+
+/* Paper background inside infowindow */
+#paper
+{
+    position:absolute;
+    top:34px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    width:80%;
+    height:77%;
+    margin:0 auto;
+}
+
+/*# sourceMappingURL=css-main_3.css.map */
