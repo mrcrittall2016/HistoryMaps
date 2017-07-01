@@ -1,0 +1,8 @@
+{
+    "database": {
+        "host": "localhost",
+        "name": "history_maps",
+        "username": "mattcrittall",
+        "password": ""
+    }
+}
