@@ -1,0 +1,80 @@
+
+/* CV section of Portfolio */
+
+.cv {
+    text-align:center;
+
+     @include extra-small-only {   
+        @include position_margin_padding(center, 0, 0 5px)
+     }
+
+    h1 {
+        letter-spacing:3px; 
+    }
+
+    h2 {
+        /*margin-bottom:20px;*/  
+
+        @include extra-small-only { 
+            font-size:12px; 
+        }
+    } 
+
+    p, 
+    li {
+        font-family:"arial", sans-serif;  
+        text-transform:none; 
+        letter-spacing:0; 
+        line-height:1.5;
+        font-size:14px;    
+        /*margin-bottom:60px;*/   
+        @include extra-small-only { 
+            /*margin-bottom:45px;*/
+        }   
+        
+    }
+    
+    span {
+        font-weight:700; 
+    }      
+    
+    ul {
+
+        list-style:none;               
+        width:70%;  
+        @include extra-small-only { 
+            width:100%
+        }   
+        margin:0 auto;
+        padding:0; 
+
+        li {
+            margin:0 0 10px;                          
+        }
+
+        li:last-of-type {
+            margin-bottom:50px; 
+        }    
+    }
+
+    hr {        
+        width:20%; 
+        @include extra-small-only { 
+            width:40%
+        }  
+        border:1px solid; 
+    }
+
+   .separate {
+       margin:60px 0; 
+       @include extra-small-only { 
+          margin:45px 0; 
+       }        
+   }
+
+}
+
+
+
+
+

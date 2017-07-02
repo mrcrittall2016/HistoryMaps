@@ -1,0 +1,242 @@
+/*******************/
+
+
+    /*SECTIONS*/
+
+
+/*******************/
+
+
+.header {
+
+    /*border:1px solid blue; */ 
+    text-align:center; 
+    width:100%;      
+    padding: 50px 225px 60px; 
+
+    @include extra-small-only {       
+        margin:0 0 20px; 
+        padding:0; 
+    } 
+
+    .container-fluid { 
+                
+        /*border:2px solid yellow; */   
+        margin:0 auto;  
+
+        @include extra-small-only { 
+            width:80%; 
+        } 
+        
+
+        .fa-bars {
+            font-size:20px; 
+            position:relative;
+            top:5px;          
+        }
+
+        .header_bar {
+           
+            padding:1px;   
+            outline:#fff;        
+
+        }       
+
+    }   
+
+}
+
+
+.main {
+    
+    text-align:center; 
+    padding:0; 
+    margin:0 auto;  
+    width:70%;
+    height:500px; 
+    border:1px solid black; 
+
+    
+
+    @include extra-small-only {
+        /*padding:10px 10px 40px;*/
+        height:500px; 
+        width:90%
+    }  
+
+    .container-fluid {
+        position:relative;
+        top:40%;
+        /*border:1px solid black;*/
+        /* Ensure container sits on top of three background-primary layers */ 
+        z-index:2;  
+
+        h1 {
+            border-bottom:3px solid black; 
+            margin:0 auto; 
+            width:55%; 
+            padding-bottom:15px; 
+            margin-bottom:25px; 
+
+              @include extra-small-only {
+               
+                border-width:2px; 
+                width:75%; 
+                font-size:30px;  
+            }  
+
+        }      
+
+        h2 {
+            font-style:italic; 
+            font-family: 'Niconne', cursive;
+
+            @include extra-small-only {
+               
+                margin:0 auto; 
+                width:60%; 
+                font-size:20px;  
+            }  
+        }     
+    }
+}
+
+
+
+.selection{
+    text-align:center; 
+    padding:0;
+    border:1px solid; 
+
+    .dialogue {
+        width:80%; 
+        margin:0 auto; 
+    }
+
+    .picture_select {
+        height:500px;
+        width:400px; 
+        position:relative;       
+        margin:20px auto 0; 
+        overflow:hidden;  
+        padding:0; 
+
+        img {
+            width:100%;
+            height:100%;  
+            margin:0; 
+            border:5px solid #000; 
+        } 
+    }
+    
+}
+
+
+.orders {
+
+    .container {
+        height:650px; 
+        margin:50px auto 100px;        
+        padding:0; 
+        text-align:left;
+
+        img {
+            width:100%;
+            height:100%;
+            margin:0; 
+            position:relative;
+            
+        }
+
+        .letter {
+
+            padding:20px 50px; 
+
+            position:absolute;            
+            top:20px; 
+            left:0;  
+
+            p {                 
+                text-align:center; 
+
+                span {
+                    float:right; 
+                }
+            }                
+            
+        }
+    }
+
+
+}
+
+
+
+
+.supporting-1 {
+    
+     /*padding:75px 225px; */
+     padding:75px 0;  
+     text-align:center; 
+     
+     border:1px solid red; 
+     .row {
+         border:1px solid green;
+
+         .col-md-12 {
+             border:1px solid yellow; 
+         }
+
+     }
+
+     /*border:1px solid red;*/  
+     @include extra-small-only {
+        padding:0;
+        margin:20px 0;         
+    }
+
+    form, .form-group {
+        color:#000;
+    }
+
+    input {
+        width:40%; 
+        margin:25px auto;
+        font-size:20px; 
+        color:#000;
+        border-radius:0; 
+        border:none;  
+
+    input:focus{
+        border:none; 
+    } 
+
+    input:hover{
+        border:none; 
+    }
+
+        @include extra-small-only {
+            width:80%; 
+        }
+        
+    }
+ 
+}
+
+.footer {
+    text-align:center; 
+    padding:15px 0 10px;     
+    background-color:#4B4E50;  
+    margin:0; 
+    p {
+        color:#fff; 
+        text-transform:uppercase; 
+        letter-spacing:2px;
+    }
+}
+
+.shadow-primary {
+    -webkit-box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.75);
+}
