@@ -1,0 +1,48 @@
+
+/* DIALOGUE */
+
+.dialogue {
+      
+    /*height:100px;*/ 
+    text-align:center; 
+    position:relative;
+    /*z-index:3;*/
+    /*display:none;*/ 
+    font-style:italic; 
+    font-family: 'Niconne', cursive;
+    padding:10px 10px 25px; 
+
+    h1 {
+        
+        font-family:"Montserrat", arial, sans-serif;  
+        text-transform:uppercase;
+        font-style:normal; 
+        font-size:32px; 
+        font-weight:bold; 
+        margin:10px auto; 
+        padding-top:5px; 
+        /*width:40%;
+        border-bottom:3px solid black; */
+        
+        @include extra-small-only { 
+            font-size:24px; 
+        }
+
+    }
+
+    h2 {
+        font-weight:bold; 
+    }
+
+    p {
+        font-size:20px; 
+        line-height:1.5; 
+        margin-bottom:50px; 
+    }
+
+    p:last-of-type{
+        margin-bottom:0; 
+    }
+
+
+  }

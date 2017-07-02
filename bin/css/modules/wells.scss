@@ -1,0 +1,70 @@
+/* WELLS */
+
+
+
+/* Go here to model box shadows: http://www.cssmatic.com/box-shadow and here for tutorial:
+https://css-tricks.com/almanac/properties/b/box-shadow/ */ 
+
+.well_custom {
+
+    position:relative; 
+    width:100%;
+    height:100%; 
+    border-radius:0; 
+    border-bottom:1px solid #fff;    
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; *
+    -webkit-box-shadow: inset -1px -1px 14px 1px rgba(0,0,0,1);
+    -moz-box-shadow: inset -1px -1px 14px 1px rgba(0,0,0,1);
+    box-shadow: inset -1px -1px 14px 1px rgba(0,0,0,1); */
+    /*-webkit-box-shadow: inset -1px -1px 14px 1px #e3e3e3;*/
+    /* box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5); */
+    /*box-shadow: inset 2px 2px 1px #272B2C;*/
+    box-shadow:inset 3px 3px 1px rgba(0,0,0,0.5);
+    z-index:0; 
+
+}
+
+.well_custom:before {
+    position:absolute;
+    background: url("../Map_images/paper_rgbstock.jpg") no-repeat center center;
+    background-size:cover;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%; 
+    /*background:#fff;*/
+    z-index:-1; 
+    /*opacity:0.3;*/
+
+}
+
+/* White layering used to lighten background imaage behind text */ 
+.well_custom:after {
+    position:absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%; 
+    z-index:-1;
+    background:#fcf2de;
+    opacity:0.2;
+}
+
+/* Add frame to any well or block using background-image Note keep splice to between 10-20% */ 
+.well-primary {    
+    
+    border:20px solid;
+    opacity:1; 
+    /*outline:1px solid #000;*/
+    /* Apparently need to save GIMP file as png to preserve transaparency.
+    See here on how to change certain parts of image to transparent: https://graphicdesign.stackexchange.com/questions/5446/making-the-background-of-an-image-transparent-in-gimp
+    
+    ie in below case have change centre of picture frame and outside */ 
+    border-image:url(../Map_images/test_frame.png) 15% round;   
+
+    /* Use background-clip to make padding transparent apart from desired image border: See here: https://css-tricks.com/transparent-borders-with-background-clip/ */
+    background-clip: padding-box;      
+
+}

@@ -1,0 +1,111 @@
+/* Background class */
+
+/* See here how to position a background image and adjust its opacity: https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity */
+
+/* Note on z-index. Default is auto, which means just inherits from parent. Often this is 
+html which has a z-index of 0 */ 
+
+/* To layer an element: Set element position to relative. Then set element:before position to absolute and z-index -1. Set it's background colour to what you desire and adjust opacity. This enables the background to be lightened without affecting the font on top. To ensure font is not affected, set container to z-index 1. If have another layer ie element:after, set container z-index to 2. See main class in sections as well as well_custom and btn_block */ 
+
+.background {          
+    position: relative;    
+    /*overflow: hidden;*/ 
+    /*height:800px;*/
+    /* Height auto sizes image to container that it is within in this case body,
+    which has been set in base.scss as min-height:100vh */
+    height:auto;  
+    width:100%;     
+    padding:0;
+    margin:0; 
+
+
+    @include extra-small-only {
+        height:auto;
+        width:100%;
+    }
+}
+
+.background:before {
+    background: url("../Map_images/oldpaper_flikr.jpg") no-repeat center center;
+    background-size:cover;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* By specifying z-index as -1, says that pseudo element is beneath background element (0) and can hence control background tone without affecting child elements */ 
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.background-primary {
+    position: relative; 
+    height:auto;  
+    width:100%;     
+    padding:0;
+    margin:0;  
+    background-color:#fff;  
+    /*border-radius:100%; */
+    opacity:1;
+    z-index:1; 
+    
+     
+}
+
+/* Two layers above and below background to control light and shading without affecting title */ 
+.background-primary:before{
+    /*background-color:#fcf2de;*/
+    background: url("../Map_images/paper2.jpg") no-repeat center center;
+    background-size:cover;
+    content: ' '; 
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*border-radius:100%;*/ 
+    z-index:-1;
+    opacity:0.3;  
+    
+}
+
+.background-primary:after {
+    /*@extend .background:before;*/ 
+    background: url("../Map_images/map2.jpg") no-repeat center center;
+    background-size:cover;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*border-radius:100%;*/  
+    opacity:0.3;
+    z-index:-1;     
+    
+}
+
+.background-secondary{
+    @extend .background;
+}
+
+.background-secondary:before {
+    @extend .background:before;
+    background: url("../Map_images/quizback.jpg") no-repeat center center;
+    background-size:cover; 
+}
+
+.background-tertiary{
+    @extend .background;
+}
+
+.background-tertiary:before {
+    @extend .background:before;
+    background: url("../Map_images/earth_map.jpg") no-repeat center center;
+    background-size:cover; 
+}
+

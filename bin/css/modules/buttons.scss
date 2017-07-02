@@ -1,0 +1,46 @@
+/* BUTTONS */
+
+.btn_block {
+    
+    /*width:100%;
+    height:100%;*/
+    position:relative;     
+    border:1px solid; 
+    border-radius:4px; 
+    -webkit-box-shadow: inset -1px -1px 14px 1px rgba(0,0,0,1);
+    -moz-box-shadow: inset -1px -1px 14px 1px rgba(0,0,0,1);
+    box-shadow: inset -1px -1px 14px 1px rgba(0,0,0,1);    
+    
+}
+
+/* Color background and adjust opacity allowing brown of body to mix with white of button background without affecting font */ 
+.btn_block:before{
+    background: url("../Map_images/paper_rgbstock.jpg") no-repeat center center;
+    background-size:cover;
+    position:absolute;
+    content:""; 
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /*background:#fcf2de;*/
+    border-radius:4px;
+    opacity:1;
+    z-index:-1; 
+
+}
+
+.btn_block:after{   
+    position:absolute;
+    content:""; 
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fcf2de;
+    border-radius:4px;
+    opacity:0.6;
+    z-index:-1; 
+
+}
+

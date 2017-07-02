@@ -1,0 +1,599 @@
+/**
+ * styles.css
+ */
+
+/*styling for info window. Seem to need to specify height in order to remove scollbar on x-axis */
+.gm-style-iw 
+{
+   width: 800px !important;
+   top: 17px !important;
+   left: 0px !important;
+   height:300px;
+}
+
+
+/*background for map screen */
+.home 
+{
+     background: url('http://theartmad.com/wp-content/uploads/2015/02/Earth-Map-Wallpaper-35.jpg');
+     background-size: cover;
+     background-repeat:no-repeat;
+    
+}
+
+/* container for map. See for centering tips: https://codemyviews.com/blog/how-to-center-anything-with-css */
+.container-fluid
+{
+    position:relative;
+    overflow: hidden;
+    width:1400px;
+    height:600px; 
+    border-style:outset;
+    border-width:2px;
+    border-color:black;
+}
+
+/*fills container*/
+#map-canvas
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    display:block;
+    margin:auto;
+}
+
+/*style and positioning for mission instructions */
+#orders
+{
+    position:relative;
+    width:1200px;
+    height:600px; /*400*/
+    background: url("../img/pages/orders.png");
+    background-repeat:no-repeat;
+    margin:0 auto;
+    margin-bottom:20px;
+}
+
+/* stylize places' labels */
+.label
+{
+    /*small, black text*/ 
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    
+    /*don't let places' labels wrap onto multiple lines*/ 
+    white-space: nowrap;
+}
+
+/*CSS for sizing the image associated with the battle screen. Note for images, need display:block to enable margin 0px auto to work
+see:http://stackoverflow.com/questions/24442060/why-centering-with-margin-0-auto-works-with-displayblock-but-does-not-work-with */
+#flag
+{
+    position:relative;
+    width:800px;
+    height:400px;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+    margin:10px auto 40px auto;
+    display:block;
+}
+
+.quiz
+{
+    overflow: scroll;
+}
+
+
+/*See here for overlaying images: http://stackoverflow.com/questions/48474/how-do-i-position-one-image-on-top-of-another-in-html
+and https://css-tricks.com/absolute-positioning-inside-relative-positioning/ */
+
+/*frame for lower box in questions.php*/
+#frame
+{
+    position:relative;
+    width:800px;
+    height:300px; /*400*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    background: url("../img/pages/quizframe.jpg");
+    background-repeat:no-repeat;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+
+/*frame for info window on map page*/
+#infowindow
+{
+    position:relative;
+    width:600px;
+    height:300px;
+    border:2px solid black;
+    background: url("../img/pages/infoframe.jpg");
+    background-repeat:no-repeat;
+    margin:0; 
+    padding:0
+}
+
+
+
+/* old paper for lower box in questions.php */
+#paper
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    width:648px; /*645*/
+    height:233px; /*278*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    display:block;
+    margin:auto;
+}
+
+/*Question in lower box*/
+#title
+{
+    position:absolute;
+    top:50px;
+    left:140px;
+    width:500px;
+    font-size:25px;
+    text-align:center;
+    word-wrap:break-word;
+    font-family:Garamond, Baskerville, serif;
+    font-style:italic;
+    font-weight: 700;
+}
+
+/*title at top of page*/
+#titlehead
+{
+    position:absolute;
+    top:15px;
+    left:50px;
+    width:700px;
+    font-size:50px;
+    font-family:Garamond, Baskerville, serif;
+    font-style:italic;
+    font-weight: 700;
+    text-align:center;
+    word-wrap:break-word;
+
+}
+
+
+/*style and positon options for multiple choice*/
+#questions
+{
+    position:absolute;
+    top:125px;
+    left:300px;
+    text-align:left;
+    width:500px;
+    font-size:16px;
+    word-wrap:break-word;
+}
+
+/*style for multiple choice text*/
+#options
+{
+    position:absolute;
+    left:40px;
+    font-family:Garamond, Baskerville, serif;
+    font-style:italic;
+    font-weight: 700; 
+}
+
+/*style and position options for button */
+#quill
+{
+    position:absolute;
+    top:100px;
+    left:0px;
+    width:150px;
+    height:20px;
+    
+}
+
+
+/*Tips to get background to fill entire page: https://css-tricks.com/perfect-full-page-background-image/*/
+.question
+{
+     
+     background: url("../img/pages/quizback.jpg");
+     background-size: cover;
+     position:relative;
+     /*background-repeat:no-repeat;
+     /*border: 1px solid transparent;*/
+     
+     
+     min-height: 100%;
+     min-width: 1024px;
+    	
+     /* Set up proportionate scaling */
+     width: 100%;
+     height: auto;
+}
+
+/*styling and positioning for login and introductory pages */
+#titlepage
+{
+     background: url("../img/pages/cracked.jpg");
+     background-size:cover;
+     background-position:center;
+     position:relative;
+     /*background-repeat:no-repeat;
+     /*border: 1px solid transparent;*/
+     
+     text-align:center;
+     
+     min-height: 100%;
+     min-width: 500px;
+    	
+     /* Set up proportionate scaling */
+     width: 100%;
+     height: 100%;
+     
+
+}
+
+/*frame for upper title box. See http://stackoverflow.com/questions/18556157/how-to-center-one-image-over-another (second answer down) for guide on positioning elements*/
+#titleframe
+{
+    
+    position:relative;
+    width:800px;
+    height:100px; 
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    text-align:center;
+    /*margin-bottom:40px*/;
+    background: url("../img/pages/frame4.3.jpg");
+    background-repeat:no-repeat;
+    margin:20px auto 40px auto;
+    
+}
+
+/*old paper for upper title box.. still seems to be absolute to the document body rather than titleframe. Hence
+moves when zoom browser in and out. This was fixed by setting the titlepaper (absolute) as a child element of the titleframe (reltive).
+The only way to incoporate the image of the latter was to use the background property and resize image in cloud9 first*/
+#titlepaper
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    width:714px;
+    height:76px; /*278*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    display:block;
+    margin:auto;
+    
+}
+
+
+/*Login page title For rgb colors: http://www.rapidtables.com/web/color/Gold_Color.htm
+text-shadow: horizontal-offset vertical-offset blur color*/
+#maintitle
+{
+    position:absolute;
+    top:15px;
+    left:155px;
+    width:500px;
+    font-size:50px;
+    font-family:"Roboto Condensed", sans-serif;
+    font-style:italic;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+    text-align:center;
+    word-wrap:break-word;
+}
+
+/*login page Zeus frame. See here for how to center things properly: https://codemyviews.com/blog/how-to-center-anything-with-css */
+#boxContainer 
+{
+    position:relative;
+    width:340px;
+    height:425px; /*400*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    background: url("../img/pages/frame4.2.jpg");
+    background-repeat:no-repeat;
+    margin:0 auto 30px auto;
+}
+
+/*login page zeus picture*/
+#box 
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    width:304px;
+    height:372px; /*278*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    display:block;
+    margin:auto;
+}
+
+/*Frame for welcome page*/
+#mainframe
+{
+    position:relative;
+    width:800px;
+    height:200px; /*400*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    background: url("../img/pages/loginbox.jpg");
+    background-repeat:no-repeat;
+    margin:0 auto;
+    
+}
+
+/*Paper for welcome page*/
+#mainpaper
+{
+    position:absolute;
+    top:1px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    width:645px;
+    height:153px; /*278*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    display:block;
+    margin:auto;
+}
+
+/*CSS for stylising login/registration form*/
+#loginform
+{
+    position:absolute;
+    width:200px;
+    left:300px;
+    top:125px
+    
+}
+
+/*CSS for login page frame */
+#loginframe
+{
+    position:relative;
+    width:800px;
+    height:500px; /*400*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    background: url("../img/pages/logbox.jpg");
+    background-repeat:no-repeat;
+    margin:0 auto;
+    
+}
+
+/*CSS for quiz master page frame */
+#quizframe
+{
+    position:relative;
+    width:800px;
+    height:800px; /*400*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    background: url("../img/pages/quizbox.jpg");
+    background-repeat:no-repeat;
+    margin:0 auto;
+    margin-bottom:30px;
+    
+}
+
+/*CSS for login page paper */
+#loginpaper
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    width:649px;
+    height:393px; /*278*/
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    display:block;
+    margin:auto;
+}
+
+.form-groups
+{
+    padding:4px;
+    /*z-index: 10; */
+}
+
+/* extra features for form-groups*/
+.additive
+{
+    padding:10px;
+    position:relative;
+    width:400px;
+    top:150px;
+    left:200px;
+}
+
+.additive2
+{
+    padding:10px;
+    position:relative;
+    width:400px;
+    top:135px;
+    left:200px;
+}
+
+
+/*Login title*/
+#login
+{
+    position:absolute;
+    top:60px;
+    left:145px;
+    width:500px;
+    font-size:35px;
+    text-align:center;
+    word-wrap:break-word;
+    font-family:Garamond, Baskerville, serif;
+    font-style:italic;
+    font-weight: 700;
+}
+
+/*link to register.php on login.php*/
+#href
+{
+    position:absolute;
+    top:300px;
+    left:282px;
+    text-align:left;
+    width:500px;
+    font-size:20px;
+    word-wrap:break-word;
+}
+
+/*CSS for stylising registration form*/
+#registerform
+{
+    position:absolute;
+    width:200px;
+    left:300px;
+    top:110px
+    
+}
+
+/*wrap portraits, titles and descriptors in campaign.php so can move as single entity. Note how margin 0 auto centres all portraits in one hit*/
+#wrapper
+{
+    position:relative;
+    width:1370px;
+    height:450px; /*400*/
+    border-style:solid;
+    border-width:2px;
+    border-color:transparent;
+    margin:2px auto;
+    padding:1px;
+}
+
+/*top frame for campaign.php*/
+#camframe
+{
+    
+    position:relative;
+    width:400px;
+    height:60px; 
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    background: url("../img/pages/camhead.jpg");
+    background-repeat:no-repeat;
+}
+
+/*wrapper around campaign names*/
+#wrapper2
+{
+    position:relative;
+    width:1400px;
+    height:60px; /*400*/
+    border-style:solid;
+    border-width:2px;
+    border-color:transparent;
+    margin:0 auto;
+    margin-bottom:2px;
+}
+
+/*stylise scroll bars.See http://www.codeproject.com/Tips/674478/Customize-Scrollbars-using-CSS for template*/ 
+
+.scrollbar
+{
+    position:absolute;
+    width:615px;
+    height:145px;
+    top:90px;
+    left:90px;
+    background-color:transparent;
+    overflow-y:auto;
+    padding-right:10px;
+    text-align:center;
+    word-wrap:break-word;
+    font-family:Garamond, Baskerville, serif;
+    font-style:italic;
+    font-size:20px;
+    font-weight: 700;
+}
+
+.content
+{
+    height:145px;
+} 
+
+#aftermath::-webkit-scrollbar
+{
+    width:16px;
+    background-color:#fafad2;
+} 
+
+#aftermath::-webkit-scrollbar-thumb
+{
+    /* From http://www.colorzilla.com/gradient-editor/ -->
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+40,b7ad70+100;Brown+3D */
+    background: #d5cea6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d5cea6 0%, #c9c190 40%, #b7ad70 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+
+    border-radius:10px;
+    border:1px solid #333333;
+    
+}
+#aftermath::-webkit-scrollbar-thumb:hover
+{
+    background-color:#b8860b;
+    border:1px solid #333333;
+}
+#aftermath::-webkit-scrollbar-thumb:active
+{
+    background-color:#b8860b;
+    border:1px solid #333333;
+} 
+
+#aftermath::-webkit-scrollbar-track
+{
+    border:1px gray solid;
+    border-radius:10px;
+    -webkit-box-shadow:0 0 6px gray inset;
+} 
+
+
+

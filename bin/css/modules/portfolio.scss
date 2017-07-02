@@ -1,0 +1,89 @@
+/* Portfolio */
+
+/* Seems like the best way to size images is to first create a placeholder for them of set size within grid ie 
+outer-box. Then scale image in separate editor (GIMP) to this size. Place within placeholder setting width to 100% and height auto */ 
+
+.portfolio {   
+    text-align:center;      
+}
+
+.entry {    
+  
+    margin:0 0 65px;     
+   
+    @include extra-small-only {   
+       padding:0 30px; 
+       margin:0;   
+    } 
+}
+
+.entry-content {
+    
+    border-bottom:2px solid #fafafa;
+    padding:0 0 40px;
+
+    @include extra-small-only {   
+        padding:0;   
+    }     
+
+    > p {
+        margin-bottom:50px; 
+    }
+}
+
+.outer-box {
+    width:370px;    
+    height:250px; 
+
+    @include extra-small-only {      
+        width:100%;  
+        height:auto;           
+    }
+
+    display:block; 
+    position:relative;
+    margin:0 auto 20px;
+    overflow:hidden;
+
+    img {
+        width:100%;
+        height:auto;
+        margin:0 auto; 
+    }     
+}
+
+.inner-box {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    padding:0;
+    opacity:0;
+    transition:opacity 0.5s; 
+
+    h4 {
+        line-height:225px; 
+    }
+}
+
+.inner-box:hover {
+    opacity:0.9;
+    background-color:#f9f9fa; 
+    cursor:pointer; 
+}
+
+.col-md-6 {
+    
+    a > h4 {
+        letter-spacing:1.5px;
+        text-transform:uppercase;
+        font-size:16px;
+        font-weight:bold;
+        margin-bottom:30px; 
+
+        @include extra-small-only {   
+            margin-bottom:15px; 
+        }
+    }
+}

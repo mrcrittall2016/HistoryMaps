@@ -1,0 +1,30 @@
+
+/* Perhaps in the future just condense this mixin to margin_padding */ 
+@mixin position_margin_padding ($text-align, $margin, $padding){
+    text-align:$text-align;
+    margin:$margin;
+    padding:$padding;
+}
+
+@mixin colors ($background, $font){
+    background-color: $background;
+    color: $font; 
+}
+
+/* Flex box */
+@mixin flexbox-display {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+}
+
+
+@mixin flex ($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}

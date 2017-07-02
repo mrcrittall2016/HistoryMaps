@@ -1,0 +1,29 @@
+
+
+PHPMyAdmin Installation complete. You can log in at: https://drcrittall-mattcrittall.c9users.io/phpmyadmin with the following username (and blank password):
+
+       Username: mattcrittall
+       
+
+mysql-ctl start
+
+OR 
+
+PHPMyAdmin Installation complete. You can log in at: https://historymaps-mattcrittall.c9users.io/phpmyadmin with the following username (and blank password):
+
+       Username: mattcrittall
+
+
+
+Seems like database is attached to https://drcrittall-mattcrittall.c9users.io/
+If change apache root to https://drcrittall-mattcrittall.c9users.io/drcrittall/historymaps/public/index.php then can no longer access 
+phpmyadmin...
+
+Likewise, if stop apache then can no longer access database full-stop....
+
+Other option is to move index.php to apache root, which is what I have done for this workspace
+
+
+To add a remote to cloud9 (In order to push to):
+git remote add origin https://github.com/mrcrittall2016/HistoryMaps
+
