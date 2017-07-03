@@ -1,0 +1,76 @@
+
+/* Modal styles */
+
+/* Set Modal position when open click on image. See here: http://stackoverflow.com/questions/20313798/bootstrap-3-modal-position */
+
+/* Custom modal class.. using SCSS nesting below */
+
+.modal-customise {
+    
+    .modal-content {
+        /*border:2px solid #000;*/ 
+        text-align:center;
+        font-style:italic; 
+        font-family: 'Niconne', cursive;
+    } 
+
+    /* Note, need to specify px as opposed to % for modal position in safari */ 
+    .modal-dialog {
+        position:relative;
+        /*top:25%; /* 200px also looked quite nice */
+        top:200px; 
+        @include extra-small-only {
+            top:100px; 
+        }
+    }
+
+    .modal-header, 
+    .modal-footer {
+        border:none; 
+        text-align:center; 
+        padding:30px; 
+        @include extra-small-only {
+            padding:15px; 
+        }
+    }
+
+    .modal-header {
+
+        h4 {
+            letter-spacing:2px;
+            /*text-transform:uppercase;*/ 
+            font-weight:bold;   
+            font-size:30px; 
+            margin:0;  
+
+             @include extra-small-only {
+                font-size:24px;  
+            }
+        }
+    }  
+
+    .modal-body {   
+        padding:0 30px;
+
+        @include extra-small-only {
+            padding:0 20px; 
+        }
+
+        font-size:20px; 
+        margin-bottom:20px;       
+
+    } 
+
+    .modal-footer {       
+
+        button.close {
+            
+            color:#000;
+            opacity:1; 
+            float:none; 
+            font-size:20px;
+            font-weight:normal; 
+
+        }          
+    }    
+}

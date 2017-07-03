@@ -1,0 +1,40 @@
+/* CSS FOR LOGIN AND REGISTRATION PAGES */
+
+.register_login {
+
+    form,
+    .form-group {
+        color:#000; 
+    }
+
+    .form-group {
+
+        /* Use .form-control here to obtain finer CSS control. Help to differentiate from .radio-inline */ 
+
+        .form-control {
+            width: 40%;
+            margin: 25px auto;
+            font-size: 20px;
+            color: #000;
+            border-radius: 0;
+           
+             @include extra-small-only { 
+                width:90%; 
+            }
+            
+        }
+
+        .radio-inline {            
+            margin:0 10px;
+            padding:0;             
+        }
+
+        button {
+            margin-top:15px; 
+        }
+
+    }   
+}
+ 
+
+ 

@@ -1,0 +1,85 @@
+/* MENU/LIST CLASS */
+
+.menu {
+    padding:0;
+    margin:0 0 25px;
+    list-style:none;  
+    /*float:left; */
+    /*border:1px solid red; */
+    
+    @include extra-small-only {   
+        display:none;          
+    }
+
+    li {
+        display:inline-block; 
+        padding:15px 25px; 
+        margin:0 20px 0; 
+        /*text-transform:uppercase;  */        
+        font-style:italic; 
+        font-family: 'Niconne', cursive;
+        font-size:20px; 
+    }
+}
+
+.mobile_menu {
+
+    display:none; 
+
+    @include extra-small-only {   
+        display:block;            
+        padding:0; 
+        margin:20px auto 0;   
+        /*border:1px solid red;*/ 
+        width:20%;  
+        height:30px; 
+        i.fa-bars {             
+            font-size:20px;
+            position:relative;
+            top:3px;            
+        }
+
+        i.fa-long-arrow-up {
+            display:none; 
+            font-size:24px;  
+        }
+    }
+}
+
+.mobile_menu-primary{
+    display:none;
+    list-style:none;   
+    margin:0; 
+    padding:0;  
+    
+    a,
+    li {
+        font-size:20px;
+        letter-spacing:normal; 
+        margin-top:10px;         
+    }  
+
+    @include extra-small-only {  
+        display:none;         
+    }
+
+}
+
+/* For Winner page (Scores) */ 
+.menu-primary {
+    padding:0;
+    margin:0;
+    list-style:none;  
+    margin-bottom: 20px; 
+
+    li {     
+        font-style:italic; 
+        font-family: 'Niconne', cursive;
+        font-size:25px;
+        letter-spacing:normal;  
+    }
+}
+
+
+
+

@@ -1,0 +1,65 @@
+/* CSS SELECTION - FOR ADJUSTING LOOK OF CAMPAIGN MENU */ 
+
+.selection {
+  text-align: center;
+  padding: 0;
+  
+  .dialogue {
+      width: 90%;
+      margin: 0 auto;      
+  }
+
+  .picture_select {
+      height: 450px;
+      @include extra-small-only {
+        height:350px;  
+      }
+      /*width: 400px*/;
+      width:80%;
+      position: relative;
+      margin: 40px auto 0;
+      @include extra-small-only {
+        margin:10px auto 50px; 
+      }
+      overflow: hidden;
+      padding: 0;       
+    }
+
+    .war {
+      @include extra-small-only {
+        margin-bottom:0;  
+      }
+    }
+
+  .picture_select img {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border: 2px solid #000; 
+   }
+}
+
+
+
+/* Adjust height to fixed quantity for bottom dialogue panel */
+.panel-height {
+  
+  position:relative; 
+  padding-top:10px; 
+
+  #wrap {     
+      overflow:scroll; 
+      height:180px;       
+
+      p {
+        position:absolute; 
+        bottom:0;
+        margin:20px;
+        left:37%;  
+        
+        @include extra-small-only {
+          left:8%; 
+        }
+      }
+  }
+}

@@ -1,0 +1,47 @@
+/* CSS FOR HEADER SECTION */
+
+
+.header {
+  /*border:1px solid blue; */
+  text-align: center;
+  width: 100%;
+  padding: 50px 225px 60px;
+
+   @include extra-small-only {
+      margin: 0 0 20px;
+      padding:0;      
+   } 
+}
+
+.header-primary {
+
+  .container-fluid {
+      margin: 0 auto;
+      @include extra-small-only {
+        width:80%; 
+      }
+   }
+}
+
+/* Wider header section for mobile than primary */
+.header-secondary { 
+
+   .container-fluid {
+      margin: 0 auto;
+      @include extra-small-only {
+        width:100%; 
+        padding-top:30px; 
+      }
+   }
+}
+
+
+
+
+
+ 
+/*
+.header .container-fluid .header_bar {
+  padding: 1px;
+  outline: #fff; }*/ 
+

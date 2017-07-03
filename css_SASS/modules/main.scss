@@ -1,0 +1,48 @@
+.main {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 70%;
+  height: 500px;
+  border: 1px solid black; }
+
+@media only screen and (max-width: 47.9375em) {
+  .main {
+    /*padding:10px 10px 40px;*/
+    height: 400px;
+    width: 90%; } }
+
+.main .container-fluid {
+  position: relative;
+  top: 40%;
+
+  @include extra-small-only { 
+     top:35%; 
+  }
+
+  /*border:1px solid black;*/
+  /* Ensure container sits on top of three background-primary layers */
+  z-index: 2; }
+
+.main .container-fluid h1 {
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+  width: 55%;
+  padding-bottom: 15px;
+  margin-bottom: 25px; }
+
+@media only screen and (max-width: 47.9375em) {
+  .main .container-fluid h1 {
+    border-width: 2px;
+    width: 75%;
+    font-size: 30px; } }
+
+.main .container-fluid h2 {
+  font-style: italic;
+  font-family: 'Niconne', cursive; }
+
+@media only screen and (max-width: 47.9375em) {
+  .main .container-fluid h2 {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 20px; } }

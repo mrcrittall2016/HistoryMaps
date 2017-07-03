@@ -1,0 +1,39 @@
+/* Base styles */
+html,
+body {
+  /* Margin, padding, height and width settings ensure html/body extends to far reaches of window */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", arial, sans-serif; }
+
+body {
+  min-height:100vh; /*If not enough content on page, ensures body at least reaches base of view...but still leaves whitespace. If do not fill the rest of the page then need to create sticky footer*/ }
+
+button {
+  padding: 10px 25px;
+  font-size: 20px;
+  background-color: transparent;
+  margin:0; }
+
+h1 {
+  letter-spacing: 10px;
+  font-size: 45px; }
+
+h2 {
+  letter-spacing: 2px;
+  font-size: 25px; }
+
+p {
+  font-size: 12px; }
+
+a {
+  color: #000;
+  letter-spacing: 2px; }
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold; }

@@ -1,0 +1,64 @@
+/* CSS for INFO WINDOW on map screen and place names*/
+/*styling for info window. Seem to need to specify height in order to remove scollbar on x-axis */
+.gm-style-iw {
+  width: 800px !important;
+  top: 17px !important;
+  left: 0px !important;
+  height: 300px; }
+
+.label {
+  /*small, black text*/
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  /*don't let places' labels wrap onto multiple lines*/
+  white-space: nowrap; }
+
+/* infowindow itself. Dimensions specified and treated as a background */
+#infowindow {
+  position: relative;
+  border: 2px solid red;
+  height: 300px;
+  /*400*/
+  width: 600px;
+  background: url("../img/pages/infoframe.jpg") no-repeat center center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0; }
+
+/* font short-hand: font: font-style font-variant font-weight font-size/line-height font-family; */
+#infowindow h2 {
+  font: italic bold 25px Garamond, Baskerville, serif;
+  margin: 20px 0 30px;
+  letter-spacing: normal; }
+
+#infowindow p {
+  font: italic bold 18px Garamond, Baskerville, serif; }
+
+#infowindow a {
+  position: relative;
+  font: italic bold 14px Garamond, Baskerville, serif;
+  letter-spacing: normal;
+  margin-top: 30px; }
+
+#infowindow .container {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  width: 100%;
+  padding: 0 60px;
+  border: 1px solid blue; }
+
+/* Paper background inside infowindow */
+#paper {
+  position: absolute;
+  top: 34px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 80%;
+  height: 77%;
+  margin: 0 auto; }
+
+  

@@ -1,0 +1,77 @@
+@mixin circle($width) {
+  width: $width;
+  height: $width;
+  border-radius: $width/2;
+}
+
+@mixin flexbox-display {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+}
+
+/* Ensure columns stack and flow on to the next line if not enough space */ 
+@mixin flex-wrap(){
+  -webkit-flex-flow: wrap row;
+  flex-flow: wrap row;
+}
+
+/* Note: The attribute flex: is a combination of flex-grow, flex-shrink, and flex-basis. 
+The default is flex: 0 1 auto; 
+
+See here for explanation: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+flex-grow: This defines the ability for a flex item to grow if necessary. 
+It accepts a unitless value that serves as a proportion. It dictates what amount of 
+the available space inside the flex container the item should take up.
+If all items have flex-grow set to 1, the remaining space in the container will be 
+distributed equally to all children. If one of the children has a value of 2, 
+the remaining space (or item?) would take up twice as much space as the others (or it will try to, at least).
+
+flex-shrink: This defines the ability for a flex item to shrink if necessary.
+
+flex-basis: This defines the default size of an element before the remaining space is 
+distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword 
+means "look at my width or height property". If set to 0, the extra space around content 
+isn't factored in. If set to auto, the extra space is distributed based on its flex-grow value. 
+
+flex: This is the shorthand for flex-grow, flex-shrink and flex-basis combined. 
+The second and third parameters (flex-shrink and flex-basis) are optional. 
+Default is 0 1 auto.
+
+From W3 Schools: Flex specifies the length of a flex item, relative to the rest of the flex items 
+inside the same container
+
+From stackoverflow http://stackoverflow.com/questions/39711700/understanding-how-flexbox-works-with-bootstrap :
+
+Here is a brief explanation why: flex:1 is a shortcut property that sets three separate 
+flex-item properties to:
+
+flex-grow: 1; If the size of the flex-item is smaller than available space within the flex 
+container then setting this to a value greater than 0 makes the item stretch to fill the 
+available space. If there are multiple flex-items in the same container they grow to share 
+the available space in proportion to the value of their flex-grow property.
+
+flex-shrink: 1; If the size of the flex-item is larger than the available space within 
+the flex container then setting this to a value greater than 0 makes the item shrink to 
+fit the available space. If there are multiple flex-items in the same container they will 
+shrink to share the available space in proportion to the value of their flex-shrink property.
+
+flex-basis: 0%; Defines the starting size of the element before being "flexed".
+
+*/
+
+@mixin flex ($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin flex-order ($value){
+  order:$value; 
+}
+
