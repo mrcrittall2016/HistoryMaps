@@ -1,0 +1,8 @@
+
+    // Unfortunately if browser has cached one of pages then, remembers this page and does not go back to the server
+    // via GET request. Thus session variables retain their previous values and/or are not recognised when send POST request
+    // Possibly need to check if page has been cached as separate loop. Got around this last time by using "inspect element"
+    // and disabling then enabling cache ie ticking/unticking box in network tab
+    // See here for more details: https://www.mnot.net/cache_docs/. Possibly use no-cache header 
+    // This is what screwed it up in the first place: http://stackoverflow.com/questions/19215637/navigate-back-with-php-form-submission
+    // Generally need to figure out what to display/do if user hits back button in browser... 

@@ -1,0 +1,30 @@
+--2016-05-08 19:26:41--  https://github.com/openlayers/ol3/releases/download/v3.15.1/v3.15.1-dist.zip
+Resolving github.com (github.com)... 192.30.252.120
+Connecting to github.com (github.com)|192.30.252.120|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-cloud.s3.amazonaws.com/releases/4723248/b4b0deb8-fce2-11e5-8c39-596b4f5199b3.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20160508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20160508T192641Z&X-Amz-Expires=300&X-Amz-Signature=24299938d424a451a6f07bbc11bf4033b5dabe422127c63bf39dc3384058ff30&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dv3.15.1-dist.zip&response-content-type=application%2Foctet-stream [following]
+--2016-05-08 19:26:41--  https://github-cloud.s3.amazonaws.com/releases/4723248/b4b0deb8-fce2-11e5-8c39-596b4f5199b3.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20160508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20160508T192641Z&X-Amz-Expires=300&X-Amz-Signature=24299938d424a451a6f07bbc11bf4033b5dabe422127c63bf39dc3384058ff30&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dv3.15.1-dist.zip&response-content-type=application%2Foctet-stream
+Resolving github-cloud.s3.amazonaws.com (github-cloud.s3.amazonaws.com)... 54.231.50.91
+Connecting to github-cloud.s3.amazonaws.com (github-cloud.s3.amazonaws.com)|54.231.50.91|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 757279 (740K) [application/octet-stream]
+Saving to: ‘v3.15.1-dist.zip’
+
+     0K .......... .......... .......... .......... ..........  6%  186K 4s
+    50K .......... .......... .......... .......... .......... 13%  244K 3s
+   100K .......... .......... .......... .......... .......... 20%  276K 3s
+   150K .......... .......... .......... .......... .......... 27%  555K 2s
+   200K .......... .......... .......... .......... .......... 33%  277K 2s
+   250K .......... .......... .......... .......... .......... 40%  555K 1s
+   300K .......... .......... .......... .......... .......... 47%  555K 1s
+   350K .......... .......... .......... .......... .......... 54%  553K 1s
+   400K .......... .......... .......... .......... .......... 60%  555K 1s
+   450K .......... .......... .......... .......... .......... 67%  549K 1s
+   500K .......... .......... .......... .......... .......... 74%  534K 1s
+   550K .......... .......... .......... .......... .......... 81%  557K 0s
+   600K .......... .......... .......... .......... .......... 87%  555K 0s
+   650K .......... .......... .......... .......... .......... 94%  125M 0s
+   700K .......... .......... .......... .........            100%  441K=1.7s
+
+2016-05-08 19:26:44 (425 KB/s) - ‘v3.15.1-dist.zip’ saved [757279/757279]
+

@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+    require(__DIR__ . "/../includes/config.php");
+    
+    echo "hello\n"; 
+    
+    $old = Badajoz; 
+    
+    $array = ["Rolica", "Vimeiro", "Oporto", "Talavera", "Bussaco", "Fuentes de Onoro", "Ciudad Rodrigo", "Salamanca", "Burgos",
+    "Vitoria", "Waterloo"];
+    
+    var_dump($array);
+    
+    foreach($array as $key => $value)
+    {
+        echo $value;
+        echo "\n"; 
+        
+        CS50::query("CREATE TABLE `final project` . `{$value}` LIKE `final project`.`{$old}`; INSERT `final project`.`{$value}` SELECT * FROM `final project`.`{$old}`");
+    }
+    
+?>

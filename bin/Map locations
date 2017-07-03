@@ -1,0 +1,23 @@
+
+/* Fixed array of markers:
+
+Note: can obtain actual battle coordinates by first searching for "battle of..." in wikipedia, then clicking on
+link next to "Coordinates:" in top right above thumbnail. Link is not always available however. Redirects to GeoHack
+
+Mondego Bay: Figueira da Foz. Change name and modify coordinates. Start with British Flag here. Right-click near to Figueira da Foz and click "what's here" to get coordinates
+Rolica: Bombarral, Leira. Change name. 39.3136,-9.1836
+Vimeiro: 39.175, -9.316667
+Oporto: Porto, Porto. Change name. 
+Talavera: Fought outside Talavera de la Reina. Change name/coordinates possibly. 39.966667,-4.833333
+Bussaco: Mata do Bussaco. Change name and coordinates. 40.344444,-8.3375
+Fuentes de Oñoro: 40.583333, -6.816667
+Ciudad Rodrigo: 40.6, -6.5333
+Badajoz: 38.878889, -6.966944
+Salamanca: 40.89353, -5.64526
+Vitoria: 42.85, -2.683333
+San Sebastián: 43.319, -1.981
+Sorauren: 42.8675, -1.6086
+Toulouse: 43.6044, 1.4439
+Waterloo: 50.68016, 4.41169
+
+*/

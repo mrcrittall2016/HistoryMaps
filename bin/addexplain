@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+    require(__DIR__ . "/../includes/config.php");
+    
+    echo "hello\n"; 
+    
+    $array = ["Rolica", "Vimeiro", "Oporto", "Talavera", "Bussaco", "Fuentes de Onoro", "Ciudad Rodrigo", "Salamanca", "Burgos",
+    "Vitoria", "Waterloo"];
+    
+    var_dump($array);
+    
+    foreach($array as $key => $value)
+    {
+        echo $value;
+        echo "\n"; 
+        
+        CS50::query("ALTER TABLE `final project` . `{$value}` ADD `explain` VARCHAR(150) NOT NULL AFTER `answer`");
+    }
+    
+?>
+
+ALTER TABLE  `Talavera` ADD  `explain` VARCHAR( 150 ) NOT NULL AFTER  `answer`
